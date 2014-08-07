@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.2
 
 Rectangle {
     width: 320
@@ -11,6 +11,7 @@ Rectangle {
 
     Triangle {
         anchors.centerIn: parent;
+        RotationAnimator on rotation { from: 0; to: 360; duration: 5000; loops: Animation.Infinite }
     }
 
     Triangle {

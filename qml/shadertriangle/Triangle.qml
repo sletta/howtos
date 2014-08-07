@@ -1,4 +1,15 @@
-import QtQuick 2.0
+import QtQuick 2.2
+
+/*
+   DISCLAIMER!!!
+
+   This is about as abusive as it can get, but if one
+   really wants to draw a triangle using a ShaderEffect
+   this is one way to do it... :)
+
+   It will not be fast and it will not be nice, but there
+   you go..
+ */
 
 ShaderEffect {
     id: shader
