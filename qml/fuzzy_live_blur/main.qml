@@ -69,9 +69,9 @@ Item {
     HeavyFastBlur {
         id: blur;
         source: contentRoot
-        sourceRect: Qt.rect(contentRoot.cellSize, contentRoot.cellSize,
-                            contentRoot.width - contentRoot.cellSize * 2,
-                            contentRoot.height - contentRoot.cellSize * 2);
+        sourceRect: Qt.rect(contentRoot.cellSize * 0.5, contentRoot.cellSize * 0.5,
+                            contentRoot.width - contentRoot.cellSize,
+                            contentRoot.height - contentRoot.cellSize);
     }
 
     Rectangle {
